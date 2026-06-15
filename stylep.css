@@ -200,3 +200,58 @@ body {
     transform: scale(1.08);
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+    
+    .navbar {
+        padding: 0 15px;
+        height: 60px;
+        flex-wrap: wrap;
+    }
+    
+    .nav-buttons a {
+        padding: 6px 12px;
+        font-size: 14px;
+        margin: 5px;
+    }
+    
+    /* 产品卡片 */
+    .product-card {
+        height: auto;
+        min-height: 220px;
+    }
+    
+    /* 产品详情页图片 */
+    .product-card img {
+        height: 280px;
+    }
+    
+    .carousel-slides img {
+        height: 380px; /* 自适应高度 */
+    }
+    
+    .info-card p, .product-info p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    
+    .whatsapp-float {
+        right: 20px;
+        top: 70px;
+    }
+}
+
+/* 更小屏幕优化 */
+@media (max-width: 480px) {
+    .carousel-slides img {
+        height: 320px;
+    }
+    
+    .product-info h2 {
+        font-size: 1.4rem;
+    }
+}
